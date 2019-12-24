@@ -27,9 +27,9 @@ public class LirlController {
         return MessageUtil.success("查询书籍成功");
     }
     @PostMapping("/update")
-    @ApiOperation("更新书籍")
+    @ApiOperation("修改书籍")
     public Message update(book b){
-        return MessageUtil.success("更新书籍成功");
+        return MessageUtil.success("修改书籍成功");
 
     }
 }
