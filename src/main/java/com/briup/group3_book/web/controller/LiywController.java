@@ -20,11 +20,10 @@ public class LiywController {
             @ApiImplicitParam(name="address",value="出版社",paramType = "query",dataType = "String"),
             @ApiImplicitParam(name="desp",value="书籍描述",paramType = "query",dataType = "String")
     })
-    @PostMapping("/add")
-    public Message add(book book1){
+    @PostMapping("/addl")
+    public Message addl(book b){
         return MessageUtil.success("添加成功！");
     }
-
 
     @ApiOperation("删除图书")
     @ApiImplicitParams({
@@ -34,8 +33,8 @@ public class LiywController {
             @ApiImplicitParam(name="address",value="出版社",paramType = "query",dataType = "String"),
             @ApiImplicitParam(name="desp",value="书籍描述",paramType = "query",dataType = "String")
     })
-    @GetMapping("/delete")
-    public Message delete(book book1){
+    @GetMapping("/deletel")
+    public Message deletel(book b){
         return MessageUtil.success("删除成功！");
     }
 }
