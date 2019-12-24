@@ -20,7 +20,7 @@ public class SuixrController {
             @ApiImplicitParam(name="address",value="出版社",paramType = "query",dataType = "String"),
             @ApiImplicitParam(name="desp",value="书籍描述",paramType = "query",dataType = "String")
     })
-    @PostMapping("/add")
+    @PostMapping("/add1")
     public Message add(book book1){
         return MessageUtil.success("添加成功！");
     }
@@ -34,7 +34,7 @@ public class SuixrController {
             @ApiImplicitParam(name="address",value="出版社",paramType = "query",dataType = "String"),
             @ApiImplicitParam(name="desp",value="书籍描述",paramType = "query",dataType = "String")
     })
-    @GetMapping("/delete")
+    @GetMapping("/delete1")
     public Message delete(book book1){
         return MessageUtil.success("删除成功！");
     }
@@ -48,7 +48,7 @@ public class SuixrController {
             @ApiImplicitParam(name="address",value="出版社",paramType = "query",dataType = "String"),
             @ApiImplicitParam(name="desp",value="书籍描述",paramType = "query",dataType = "String")
     })
-    @PostMapping ("/update")
+    @PostMapping ("/update1")
     public Message update(book book1){
         return MessageUtil.success("修改成功！");
     }
@@ -61,7 +61,7 @@ public class SuixrController {
             @ApiImplicitParam(name="address",value="出版社",paramType = "query",dataType = "String"),
             @ApiImplicitParam(name="desp",value="书籍描述",paramType = "query",dataType = "String")
     })
-    @GetMapping("/search")
+    @GetMapping("/search1")
     public Message search(book book1){
         return MessageUtil.success("查询成功！");
     }
