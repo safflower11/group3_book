@@ -3,7 +3,7 @@ package com.briup.group3_book.bean;
 import io.swagger.annotations.ApiModelProperty;
 
 public class book {
-    @ApiModelProperty(value = "书籍编号",required =truep)
+    @ApiModelProperty(value = "书籍编号",required =true)
     private int book_id;//书籍编号
     @ApiModelProperty(value = "作者")
     private String autor;//作者
