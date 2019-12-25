@@ -6,13 +6,13 @@ public class book {
     @ApiModelProperty(value = "书籍编号",required =true)
     private int book_id;//书籍编号
     @ApiModelProperty(value = "作者")
-    private String autor;//作者
+    private String author;//作者
     @ApiModelProperty(value = "书籍名字")
     private String name;
     @ApiModelProperty(value = "出版社")
     private String address;//出版社
     @ApiModelProperty(value = "书籍描述")
-    private String desp;//描述
+    private String desp;//描述git
 
     public int getBook_id() {
         return book_id;
@@ -23,11 +23,11 @@ public class book {
     }
 
     public String getAutor() {
-        return autor;
+        return author;
     }
 
     public void setAutor(String autor) {
-        this.autor = autor;
+        this.author = autor;
     }
 
     public String getName() {
