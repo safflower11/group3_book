@@ -1,6 +1,8 @@
 package com.briup.group3_book.bean;
 
+
 import io.swagger.annotations.ApiModelProperty;
+
 
 public class book {
     @ApiModelProperty(value = "书籍编号",required =true)

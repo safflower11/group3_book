@@ -3,6 +3,7 @@ package com.briup.group3_book.web.controller;
 import com.briup.group3_book.bean.book;
 import com.briup.group3_book.util.Message;
 import com.briup.group3_book.util.MessageUtil;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/lirl")
+@Api(description = "控制类")
 public class LirlController {
     @PostMapping("/add")
     @ApiOperation("添加书籍")
